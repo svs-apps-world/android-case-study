@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dealDetailsImage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_target_red" />
+
+            <TextView
+                android:id="@+id/dealDetailsSalePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dealDetailsImage"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="$8.98" />
+
+            <TextView
+                android:id="@+id/dealDetailsRegularPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/dealDetailsSalePrice"
+                android:layout_alignBottom="@id/dealDetailsSalePrice"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@id/dealDetailsSalePrice"
+                android:layout_toRightOf="@id/dealDetailsSalePrice"
+                android:gravity="center_vertical|end"
+                android:textSize="26sp"
+                tools:text="$8.98" />
+
+            <TextView
+                android:id="@+id/dealDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dealDetailsSalePrice"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                tools:text="Lace Tank - Lily star" />
+
+            <TextView
+                android:id="@+id/dealDetailsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dealDetailsTitle"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                tools:text="minim ad et minim ipsum duis irure pariatur deserunt eu cillum anim ipsum velit tempor eu pariatur sunt mollit tempor ut tempor exercitation occaeca" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addToListButton"
+            android:text="@string/add_to_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_color_100"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/addToCartButton"
+            android:text="@string/add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorRed"
+            android:textColor="@color/white_color"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

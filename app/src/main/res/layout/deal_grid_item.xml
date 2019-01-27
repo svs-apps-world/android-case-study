@@ -1,0 +1,75 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:id="@+id/dealListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/dealListImageView"
+            android:layout_width="@dimen/deal_list_item_image_size"
+            android:layout_height="@dimen/deal_list_item_image_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/product_image_content_description"
+            android:src="@drawable/ic_target_red" />
+
+        <TextView
+            android:id="@+id/dealListSalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dealListImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/deal_list_margin_left"
+            android:layout_marginLeft="@dimen/deal_list_margin_left"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="$6.00" />
+
+        <TextView
+            android:id="@+id/dealListRegularPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dealListSalePrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/deal_list_margin_left"
+            android:layout_marginLeft="@dimen/deal_list_margin_left"
+            android:textSize="12sp"
+            tools:text="Reg $14.00" />
+
+        <TextView
+            android:id="@+id/dealListTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dealListRegularPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/deal_list_margin_left"
+            android:layout_marginLeft="@dimen/deal_list_margin_left"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/gray_color_500"
+            android:textSize="18sp"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/dealsListAisleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dealListTitle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/deal_list_margin_left"
+            android:layout_marginLeft="@dimen/deal_list_margin_left"
+            android:layout_marginTop="10dp"
+            tools:text="Aisle F4" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
